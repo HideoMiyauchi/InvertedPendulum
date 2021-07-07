@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 #***********************************************************
-#Inverted Pendulum without rotary encoder
+#Inverted Pendulum without encoder
 #2021/07/04 Hideo Miyauchi
 #***********************************************************
 
@@ -350,13 +350,13 @@ plt.tight_layout()
 angle_history =theta_array
 x_history =theta_array2
 
-fig2 = plt.figure( figsize=(4,4) )
+fig2 = plt.figure( figsize=(4,2) )
 
 ratio=2
 ax = fig2.add_subplot(111, aspect=ratio, autoscale_on=False, xlim=(-50, 200), ylim=(-10, 30))
 ax.grid()
 line, = ax.plot([], [], 'o-', lw=2)
-time_text = ax.text(0.02, 0.95, 'aaaaaa', transform=ax.transAxes)
+time_text = ax.text(0.02, 1.05, 'aaaaaa', transform=ax.transAxes)
 
 def init():
     line.set_data([], [])
